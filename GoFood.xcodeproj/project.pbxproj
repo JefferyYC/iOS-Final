@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7202244D6092005CB33C /* AppDelegate.swift */; };
+		D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7204244D6092005CB33C /* SceneDelegate.swift */; };
+		D86D7207244D6092005CB33C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7206244D6092005CB33C /* ViewController.swift */; };
+		D86D720A244D6092005CB33C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86D7208244D6092005CB33C /* Main.storyboard */; };
+		D86D720D244D6092005CB33C /* GoFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D86D720B244D6092005CB33C /* GoFood.xcdatamodeld */; };
+		D86D720F244D6095005CB33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86D720E244D6095005CB33C /* Assets.xcassets */; };
+		D86D7212244D6095005CB33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86D7210244D6095005CB33C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D86D71FF244D6092005CB33C /* GoFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86D7202244D6092005CB33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D86D7204244D6092005CB33C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D86D7206244D6092005CB33C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D86D7209244D6092005CB33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D86D720C244D6092005CB33C /* GoFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoFood.xcdatamodel; sourceTree = "<group>"; };
+		D86D720E244D6095005CB33C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D86D7211244D6095005CB33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D86D7213244D6095005CB33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D86D71FC244D6092005CB33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D86D71F6244D6092005CB33C = {
+			isa = PBXGroup;
+			children = (
+				D86D7201244D6092005CB33C /* GoFood */,
+				D86D7200244D6092005CB33C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D86D7200244D6092005CB33C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86D71FF244D6092005CB33C /* GoFood.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D86D7201244D6092005CB33C /* GoFood */ = {
+			isa = PBXGroup;
+			children = (
+				D86D7202244D6092005CB33C /* AppDelegate.swift */,
+				D86D7204244D6092005CB33C /* SceneDelegate.swift */,
+				D86D7206244D6092005CB33C /* ViewController.swift */,
+				D86D7208244D6092005CB33C /* Main.storyboard */,
+				D86D720E244D6095005CB33C /* Assets.xcassets */,
+				D86D7210244D6095005CB33C /* LaunchScreen.storyboard */,
+				D86D7213244D6095005CB33C /* Info.plist */,
+				D86D720B244D6092005CB33C /* GoFood.xcdatamodeld */,
+			);
+			path = GoFood;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D86D71FE244D6092005CB33C /* GoFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86D7216244D6095005CB33C /* Build configuration list for PBXNativeTarget "GoFood" */;
+			buildPhases = (
+				D86D71FB244D6092005CB33C /* Sources */,
+				D86D71FC244D6092005CB33C /* Frameworks */,
+				D86D71FD244D6092005CB33C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoFood;
+			productName = GoFood;
+			productReference = D86D71FF244D6092005CB33C /* GoFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D86D71F7244D6092005CB33C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "iOS Decal";
+				TargetAttributes = {
+					D86D71FE244D6092005CB33C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D86D71FA244D6092005CB33C /* Build configuration list for PBXProject "GoFood" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D86D71F6244D6092005CB33C;
+			productRefGroup = D86D7200244D6092005CB33C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D86D71FE244D6092005CB33C /* GoFood */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D86D71FD244D6092005CB33C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86D7212244D6095005CB33C /* LaunchScreen.storyboard in Resources */,
+				D86D720F244D6095005CB33C /* Assets.xcassets in Resources */,
+				D86D720A244D6092005CB33C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D86D71FB244D6092005CB33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86D7207244D6092005CB33C /* ViewController.swift in Sources */,
+				D86D720D244D6092005CB33C /* GoFood.xcdatamodeld in Sources */,
+				D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */,
+				D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D86D7208244D6092005CB33C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D86D7209244D6092005CB33C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D86D7210244D6095005CB33C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D86D7211244D6095005CB33C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D86D7214244D6095005CB33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D86D7215244D6095005CB33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D86D7217244D6095005CB33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y4P8PRDVW;
+				INFOPLIST_FILE = GoFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.iOS-Decal.GoFood";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D86D7218244D6095005CB33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y4P8PRDVW;
+				INFOPLIST_FILE = GoFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.iOS-Decal.GoFood";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D86D71FA244D6092005CB33C /* Build configuration list for PBXProject "GoFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86D7214244D6095005CB33C /* Debug */,
+				D86D7215244D6095005CB33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86D7216244D6095005CB33C /* Build configuration list for PBXNativeTarget "GoFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86D7217244D6095005CB33C /* Debug */,
+				D86D7218244D6095005CB33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D86D720B244D6092005CB33C /* GoFood.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D86D720C244D6092005CB33C /* GoFood.xcdatamodel */,
+			);
+			currentVersion = D86D720C244D6092005CB33C /* GoFood.xcdatamodel */;
+			path = GoFood.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D86D71F7244D6092005CB33C /* Project object */;
+}
