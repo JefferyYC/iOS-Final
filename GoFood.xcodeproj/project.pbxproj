@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2F9D2FBD1BBB8D644F2C9F3 /* Pods_GoFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B34DD7871D8411869BB621 /* Pods_GoFood.framework */; };
 		D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7202244D6092005CB33C /* AppDelegate.swift */; };
 		D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7204244D6092005CB33C /* SceneDelegate.swift */; };
 		D86D7207244D6092005CB33C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7206244D6092005CB33C /* ViewController.swift */; };
@@ -14,9 +15,12 @@
 		D86D720D244D6092005CB33C /* GoFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D86D720B244D6092005CB33C /* GoFood.xcdatamodeld */; };
 		D86D720F244D6095005CB33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86D720E244D6095005CB33C /* Assets.xcassets */; };
 		D86D7212244D6095005CB33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86D7210244D6095005CB33C /* LaunchScreen.storyboard */; };
+		D86D721A244D64B7005CB33C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D86D7219244D64B7005CB33C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B34DD7871D8411869BB621 /* Pods_GoFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		605B0D75E0FE3F44B06AABFC /* Pods-GoFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoFood.debug.xcconfig"; path = "Target Support Files/Pods-GoFood/Pods-GoFood.debug.xcconfig"; sourceTree = "<group>"; };
 		D86D71FF244D6092005CB33C /* GoFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86D7202244D6092005CB33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D86D7204244D6092005CB33C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		D86D720E244D6095005CB33C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86D7211244D6095005CB33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D86D7213244D6095005CB33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86D7219244D64B7005CB33C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EECBE83369F084C4FE0285FF /* Pods-GoFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoFood.release.xcconfig"; path = "Target Support Files/Pods-GoFood/Pods-GoFood.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F9D2FBD1BBB8D644F2C9F3 /* Pods_GoFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5222641D83BDFB85A6AB10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				605B0D75E0FE3F44B06AABFC /* Pods-GoFood.debug.xcconfig */,
+				EECBE83369F084C4FE0285FF /* Pods-GoFood.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D86D71F6244D6092005CB33C = {
 			isa = PBXGroup;
 			children = (
 				D86D7201244D6092005CB33C /* GoFood */,
 				D86D7200244D6092005CB33C /* Products */,
+				AC5222641D83BDFB85A6AB10 /* Pods */,
+				E2B32F35EDF6666989E9E4E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +85,17 @@
 				D86D7210244D6095005CB33C /* LaunchScreen.storyboard */,
 				D86D7213244D6095005CB33C /* Info.plist */,
 				D86D720B244D6092005CB33C /* GoFood.xcdatamodeld */,
+				D86D7219244D64B7005CB33C /* GoogleService-Info.plist */,
 			);
 			path = GoFood;
+			sourceTree = "<group>";
+		};
+		E2B32F35EDF6666989E9E4E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11B34DD7871D8411869BB621 /* Pods_GoFood.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D86D7216244D6095005CB33C /* Build configuration list for PBXNativeTarget "GoFood" */;
 			buildPhases = (
+				59E2036D07C0E7839759ED4D /* [CP] Check Pods Manifest.lock */,
 				D86D71FB244D6092005CB33C /* Sources */,
 				D86D71FC244D6092005CB33C /* Frameworks */,
 				D86D71FD244D6092005CB33C /* Resources */,
+				B61B92D98BEE1D778D396215 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +159,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86D7212244D6095005CB33C /* LaunchScreen.storyboard in Resources */,
+				D86D721A244D64B7005CB33C /* GoogleService-Info.plist in Resources */,
 				D86D720F244D6095005CB33C /* Assets.xcassets in Resources */,
 				D86D720A244D6092005CB33C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59E2036D07C0E7839759ED4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61B92D98BEE1D778D396215 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoFood/Pods-GoFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoFood/Pods-GoFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoFood/Pods-GoFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D86D71FB244D6092005CB33C /* Sources */ = {
@@ -286,6 +359,7 @@
 		};
 		D86D7217244D6095005CB33C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605B0D75E0FE3F44B06AABFC /* Pods-GoFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +378,7 @@
 		};
 		D86D7218244D6095005CB33C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECBE83369F084C4FE0285FF /* Pods-GoFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
