@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>242591717528-68rhr0i4s5j3t8ikb1mrsiegm1snbs2k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.242591717528-68rhr0i4s5j3t8ikb1mrsiegm1snbs2k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBYd0ILi_AhSQ13zXv02dPdGw4Xf8Aweyw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>242591717528</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.iOS-Decal.GoFood</string>
+	<key>PROJECT_ID</key>
+	<string>gofood-61e89</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gofood-61e89.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:242591717528:ios:105847537182180d1258ed</string>
+	<key>DATABASE_URL</key>
+	<string>https://gofood-61e89.firebaseio.com</string>
+</dict>
+</plist>
