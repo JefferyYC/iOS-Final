@@ -28,7 +28,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         background.image = UIImage(named: "loginback")
         goFood.textColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1)
-        goFood.font = UIFont(name: "RockSalt", size: 75)
+        goFood.font = UIFont(name: "RockSalt", size: 72)
         
         username.placeholder = "Username:"
         
@@ -37,17 +37,17 @@ class LogInViewController: UIViewController {
         
         
         signup.setTitle("SignUp!", for: .normal)
-        signup.setTitleColor(UIColor.black, for: .normal)
-        signup.titleLabel!.font = UIFont(name: "RockSalt", size: 18)
+        signup.setTitleColor(UIColor.white, for: .normal)
+        signup.titleLabel!.font = UIFont(name: "RockSalt", size: 22)
         signup.clipsToBounds = true
         signup.layer.cornerRadius = 30
         signup.layer.borderWidth = 3
         signup.layer.borderColor = UIColor.white.cgColor
         
         
-        login.setTitle("SignUp!", for: .normal)
-        login.setTitleColor(UIColor.black, for: .normal)
-        login.titleLabel!.font = UIFont(name: "RockSalt", size: 18)
+        login.setTitle("LogIn!", for: .normal)
+        login.setTitleColor(UIColor.white, for: .normal)
+        login.titleLabel!.font = UIFont(name: "RockSalt", size: 22)
         login.clipsToBounds = true
         login.layer.cornerRadius = 30
         login.layer.borderWidth = 3
