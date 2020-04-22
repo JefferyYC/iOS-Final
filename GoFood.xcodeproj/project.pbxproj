@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F9EAE1D244FA5EE000163B4 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */; };
 		3F9EAE1F244FCBBA000163B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */; };
+		3F9EAE23245015A8000163B4 /* MyFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */; };
 		B2F9D2FBD1BBB8D644F2C9F3 /* Pods_GoFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B34DD7871D8411869BB621 /* Pods_GoFood.framework */; };
 		D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7202244D6092005CB33C /* AppDelegate.swift */; };
 		D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7204244D6092005CB33C /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 		11B34DD7871D8411869BB621 /* Pods_GoFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFoodTableViewCell.swift; sourceTree = "<group>"; };
 		605B0D75E0FE3F44B06AABFC /* Pods-GoFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoFood.debug.xcconfig"; path = "Target Support Files/Pods-GoFood/Pods-GoFood.debug.xcconfig"; sourceTree = "<group>"; };
 		D86D71FF244D6092005CB33C /* GoFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86D7202244D6092005CB33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */,
 				D8DAAAC9244E4B0D00560028 /* SurveyTableViewCell.swift */,
 				D86D7208244D6092005CB33C /* Main.storyboard */,
+				3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */,
 				D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */,
 				3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */,
 				D86D720E244D6095005CB33C /* Assets.xcassets */,
@@ -235,6 +238,7 @@
 				D86D7207244D6092005CB33C /* ViewController.swift in Sources */,
 				D8DAAACA244E4B0D00560028 /* SurveyTableViewCell.swift in Sources */,
 				D8DAAACE244EB34B00560028 /* GoFoodViewController.swift in Sources */,
+				3F9EAE23245015A8000163B4 /* MyFoodTableViewCell.swift in Sources */,
 				D86D720D244D6092005CB33C /* GoFood.xcdatamodeld in Sources */,
 				3F9EAE1D244FA5EE000163B4 /* LogInViewController.swift in Sources */,
 				3F9EAE1F244FCBBA000163B4 /* HomeViewController.swift in Sources */,
