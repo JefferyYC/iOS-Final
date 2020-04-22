@@ -22,6 +22,7 @@
 		D8DAAACE244EB34B00560028 /* GoFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */; };
 		D8DAAAD0244FD81400560028 /* RockSalt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8DAAACF244FD81400560028 /* RockSalt.ttf */; };
 		D8DAAAD2244FD86600560028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8DAAAD1244FD86600560028 /* GoogleService-Info.plist */; };
+		D8DAAAD4245005E300560028 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DAAAD3245005E300560028 /* SegueFromLeft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoFoodViewController.swift; sourceTree = "<group>"; };
 		D8DAAACF244FD81400560028 /* RockSalt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RockSalt.ttf; path = "rock-salt/RockSalt.ttf"; sourceTree = SOURCE_ROOT; };
 		D8DAAAD1244FD86600560028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D8DAAAD3245005E300560028 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		EECBE83369F084C4FE0285FF /* Pods-GoFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoFood.release.xcconfig"; path = "Target Support Files/Pods-GoFood/Pods-GoFood.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */,
 				D8DAAAC9244E4B0D00560028 /* SurveyTableViewCell.swift */,
 				D86D7208244D6092005CB33C /* Main.storyboard */,
+				D8DAAAD3245005E300560028 /* SegueFromLeft.swift */,
 				D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */,
 				3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */,
 				D86D720E244D6095005CB33C /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 				3F9EAE1F244FCBBA000163B4 /* HomeViewController.swift in Sources */,
 				D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */,
 				D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */,
+				D8DAAAD4245005E300560028 /* SegueFromLeft.swift in Sources */,
 				D8DAAAC8244E4AE800560028 /* SurveyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
