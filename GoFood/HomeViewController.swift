@@ -20,6 +20,20 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
        
     
+    struct foods {
+              var image: String
+              var name: String
+              var type: String
+          }
+          
+    let f1 = foods(image: "duck", name: "DaDong", type: "Chinese Food")
+    let f2 = foods(image: "brunch", name: "Morning Cafe", type: "Brunch")
+    let f3 = foods(image: "kiraku", name: "Kiraku", type: "Japanese Food")
+    let f4 = foods(image: "spanish", name: "Crazy Ones", type: "Spanish Food")
+       
+    var foodslist: [foods]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         foodlist.dataSource = self
@@ -27,22 +41,26 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         homebackground.image = UIImage(named: "homeback")
         myfood.textColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1)
         myfood.font = UIFont(name: "RockSalt", size: 56)
-
+        foodslist = [f1, f2, f3, f4]
+//        foodlist.rowHeight = UITableView.automaticDimension
+//        foodlist.estimatedRowHeight = 600
+        foodlist.rowHeight = 150
         // Do any additional setup after loading the view.
     }
     
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return foodslist.count
     }
           
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "foodcell") as? MyFoodTableViewCell{
-            cell.resname.text = "Kiraku"
+            cell.resname.text = foodslist[indexPath.row].name
             cell.resname.font = UIFont(name: "RockSalt", size:20)
-            cell.restype.text = "Japanese Food"
+            cell.restype.text = foodslist[indexPath.row].type
             cell.restype.font = UIFont(name: "RockSalt", size:12)
-            cell.resfood.image = UIImage(named: "kiraku")
+            cell.resfood.image = UIImage(named: foodslist[indexPath.row].image)
             return cell
         } else {
             return UITableViewCell()

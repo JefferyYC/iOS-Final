@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zqm-hV-Sgj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kt1-Xj-Gnd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -34,21 +34,22 @@
                                 <rect key="frame" x="35" y="197" width="344" height="549"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodcell" rowHeight="166" id="CTY-Iu-cID" customClass="MyFoodTableViewCell" customModule="GoFood" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="344" height="166"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="40" reuseIdentifier="foodcell" rowHeight="378" id="CTY-Iu-cID" customClass="MyFoodTableViewCell" customModule="GoFood" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="344" height="378"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CTY-Iu-cID" id="n8v-pX-qIH">
-                                            <rect key="frame" x="0.0" y="0.0" width="344" height="166"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="378"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s47-xD-ItS">
-                                                    <rect key="frame" x="24" y="26" width="111" height="120"/>
+                                                    <rect key="frame" x="24" y="20" width="111" height="120"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="5ck-w5-5w1"/>
                                                         <constraint firstAttribute="width" constant="120" id="hru-tQ-F06"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zl3-Sm-oYn">
-                                                    <rect key="frame" x="163" y="35" width="131" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zl3-Sm-oYn">
+                                                    <rect key="frame" x="155" y="20" width="42" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="IJ1-3d-amP"/>
                                                     </constraints>
@@ -67,10 +68,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Zl3-Sm-oYn" firstAttribute="leading" secondItem="s47-xD-ItS" secondAttribute="trailing" constant="28" id="5IW-PT-3m3"/>
-                                                <constraint firstAttribute="bottom" secondItem="s47-xD-ItS" secondAttribute="bottom" constant="20" id="HaA-rd-pCB"/>
-                                                <constraint firstItem="lcs-rv-Rh2" firstAttribute="leading" secondItem="s47-xD-ItS" secondAttribute="trailing" constant="28" id="Ibv-Vc-fid"/>
-                                                <constraint firstItem="s47-xD-ItS" firstAttribute="top" secondItem="n8v-pX-qIH" secondAttribute="top" constant="26" id="Oql-7l-kpk"/>
+                                                <constraint firstItem="Zl3-Sm-oYn" firstAttribute="leading" secondItem="s47-xD-ItS" secondAttribute="trailing" constant="20" id="5IW-PT-3m3"/>
+                                                <constraint firstItem="lcs-rv-Rh2" firstAttribute="leading" secondItem="s47-xD-ItS" secondAttribute="trailing" constant="20" id="Ibv-Vc-fid"/>
+                                                <constraint firstItem="s47-xD-ItS" firstAttribute="top" secondItem="n8v-pX-qIH" secondAttribute="top" constant="20" id="Oql-7l-kpk"/>
                                                 <constraint firstItem="s47-xD-ItS" firstAttribute="leading" secondItem="n8v-pX-qIH" secondAttribute="leadingMargin" constant="4" id="Rj6-Wt-yHy"/>
                                                 <constraint firstItem="lcs-rv-Rh2" firstAttribute="top" secondItem="Zl3-Sm-oYn" secondAttribute="bottom" constant="18" id="WYZ-1U-Ftb"/>
                                                 <constraint firstAttribute="trailing" secondItem="s47-xD-ItS" secondAttribute="trailing" constant="209" id="heB-uK-6xn"/>
