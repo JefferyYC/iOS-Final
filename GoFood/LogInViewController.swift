@@ -56,6 +56,11 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //hide the nav bar on login page
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 
     /*
     // MARK: - Navigation

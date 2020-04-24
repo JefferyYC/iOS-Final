@@ -14,7 +14,6 @@ class GoFoodViewController: UIViewController {
     @IBOutlet weak var restaurantName: UILabel!
     @IBOutlet weak var restaurantType: UILabel!
     @IBOutlet weak var review: UILabel!
-    @IBOutlet weak var restaurantPic: UIImageView!
     @IBOutlet weak var filter: UIImageView!
     @IBOutlet weak var info: UILabel!
     @IBOutlet weak var dislikeButton: UIButton!
@@ -33,13 +32,12 @@ class GoFoodViewController: UIViewController {
         background.image = UIImage(named: "goFoodBG")
         restaurantName.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         restaurantName.text = "Kiraku"
-        restaurantName.font = UIFont(name: "RockSalt", size: 35)
+        restaurantName.font = UIFont(name: "RockSalt", size: 30)
         restaurantType.text = "Japanese Food"
         restaurantType.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        restaurantType.font = UIFont(name: "RockSalt", size: 20)
+        restaurantType.font = UIFont(name: "RockSalt", size: 15)
         review.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         review.font = UIFont(name: "Noteworthy-Bold", size: 18)
-        setImage(image: restaurantPic, name: "kiraku", curv: restaurantPic.frame.size.width/2)
         
         //grey filter
         filter.clipsToBounds = true
