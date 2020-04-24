@@ -48,6 +48,7 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //setting background
         background.image = UIImage(named: "surveyBG")
         
