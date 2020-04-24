@@ -61,6 +61,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.restype.text = foodslist[indexPath.row].type
             cell.restype.font = UIFont(name: "RockSalt", size:12)
             cell.resfood.image = UIImage(named: foodslist[indexPath.row].image)
+            cell.contentView.backgroundColor = UIColor(red: 0.848, green: 0.856, blue: 0.862, alpha: 1)
             return cell
         } else {
             return UITableViewCell()
