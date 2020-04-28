@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2DF35124580B9A0034F18C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DF35024580B9A0034F18C /* SignupViewController.swift */; };
 		3F9EAE1D244FA5EE000163B4 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */; };
 		3F9EAE1F244FCBBA000163B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */; };
 		3F9EAE23245015A8000163B4 /* MyFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		11B34DD7871D8411869BB621 /* Pods_GoFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2DF35024580B9A0034F18C /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFoodTableViewCell.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */,
 				D8DAAAC9244E4B0D00560028 /* SurveyTableViewCell.swift */,
 				D86D7208244D6092005CB33C /* Main.storyboard */,
+				3F2DF35024580B9A0034F18C /* SignupViewController.swift */,
 				3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */,
 				D8DAAAD3245005E300560028 /* SegueFromLeft.swift */,
 				D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */,
@@ -244,6 +247,7 @@
 				3F9EAE23245015A8000163B4 /* MyFoodTableViewCell.swift in Sources */,
 				D86D720D244D6092005CB33C /* GoFood.xcdatamodeld in Sources */,
 				3F9EAE1D244FA5EE000163B4 /* LogInViewController.swift in Sources */,
+				3F2DF35124580B9A0034F18C /* SignupViewController.swift in Sources */,
 				3F9EAE1F244FCBBA000163B4 /* HomeViewController.swift in Sources */,
 				D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */,
 				D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */,
