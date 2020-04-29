@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WEK-gD-SVU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJU-AF-ztk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -475,7 +475,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GMD-tb-n5J" kind="show" id="MtZ-NT-3RM"/>
+                                    <action selector="loginpressed:" destination="Kt1-Xj-Gnd" eventType="touchUpInside" id="Rss-or-FCr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="de2-qs-ODY">
@@ -497,9 +497,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5U-pk-NjC">
+                                <rect key="frame" x="46" y="550" width="327" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="RZc-BB-Fak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="WSd-9f-7PA" firstAttribute="trailing" secondItem="J5U-pk-NjC" secondAttribute="trailing" constant="41" id="1C6-h2-aiM"/>
                             <constraint firstItem="D1k-BE-SCo" firstAttribute="leading" secondItem="WSd-9f-7PA" secondAttribute="leading" constant="32" id="8bA-uM-VD6"/>
                             <constraint firstItem="de2-qs-ODY" firstAttribute="top" secondItem="a4S-Eu-gOZ" secondAttribute="bottom" constant="32" id="AKR-xD-bX0"/>
                             <constraint firstItem="a4S-Eu-gOZ" firstAttribute="top" secondItem="WSd-9f-7PA" secondAttribute="top" constant="300" id="CUa-ak-73q"/>
@@ -510,6 +522,8 @@
                             <constraint firstItem="WSd-9f-7PA" firstAttribute="trailing" secondItem="D1k-BE-SCo" secondAttribute="trailing" constant="25" id="mO9-TP-ofC"/>
                             <constraint firstItem="a4S-Eu-gOZ" firstAttribute="leading" secondItem="WSd-9f-7PA" secondAttribute="leading" constant="60" id="oB7-Gv-89m"/>
                             <constraint firstItem="WSd-9f-7PA" firstAttribute="trailing" secondItem="GWc-uY-P2k" secondAttribute="trailing" constant="35" id="p5j-LM-uTs"/>
+                            <constraint firstItem="J5U-pk-NjC" firstAttribute="leading" secondItem="WSd-9f-7PA" secondAttribute="leading" constant="46" id="sg9-G7-CsI"/>
+                            <constraint firstItem="J5U-pk-NjC" firstAttribute="top" secondItem="de2-qs-ODY" secondAttribute="bottom" constant="30" id="swJ-2o-z1P"/>
                             <constraint firstItem="aMw-M0-K2s" firstAttribute="top" secondItem="de2-qs-ODY" secondAttribute="bottom" constant="150" id="t3z-5Y-6Tk"/>
                             <constraint firstItem="D1k-BE-SCo" firstAttribute="top" secondItem="WSd-9f-7PA" secondAttribute="top" constant="120" id="zAK-AI-ext"/>
                         </constraints>
@@ -518,12 +532,14 @@
                     <navigationItem key="navigationItem" id="awC-Vn-673"/>
                     <connections>
                         <outlet property="background" destination="Rvg-kr-048" id="FUn-YI-nUz"/>
+                        <outlet property="error" destination="J5U-pk-NjC" id="ktN-BD-0Gq"/>
                         <outlet property="goFood" destination="D1k-BE-SCo" id="62V-tS-BMg"/>
                         <outlet property="login" destination="GWc-uY-P2k" id="GNP-dL-yuj"/>
                         <outlet property="password" destination="de2-qs-ODY" id="XVf-4B-R9Y"/>
                         <outlet property="signup" destination="aMw-M0-K2s" id="vEN-XE-EWK"/>
                         <outlet property="username" destination="a4S-Eu-gOZ" id="Q4L-VE-h4r"/>
                         <segue destination="WEK-gD-SVU" kind="show" identifier="signup" id="0PK-Hu-TDw"/>
+                        <segue destination="GMD-tb-n5J" kind="show" identifier="LogIn" id="qvL-FT-Kus"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45r-9W-ObU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -604,16 +620,16 @@
                                     <action selector="signuppressed:" destination="WEK-gD-SVU" eventType="touchUpInside" id="rqQ-Bd-x7Y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMi-EI-xGk">
-                                <rect key="frame" x="50" y="545.5" width="314" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMi-EI-xGk">
+                                <rect key="frame" x="50" y="545.5" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hLb-6X-AMJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="2" height="2"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -623,7 +639,7 @@
                             <constraint firstItem="VMi-EI-xGk" firstAttribute="leading" secondItem="5Fu-bC-Xh6" secondAttribute="leading" constant="50" id="2Kp-kd-SDZ"/>
                             <constraint firstItem="37r-Cd-dUr" firstAttribute="top" secondItem="5Fu-bC-Xh6" secondAttribute="top" constant="85" id="3bt-Sk-b0R"/>
                             <constraint firstItem="5Fu-bC-Xh6" firstAttribute="trailing" secondItem="9Va-mm-Ru3" secondAttribute="trailing" constant="50" id="4ls-G7-VCg"/>
-                            <constraint firstItem="5Fu-bC-Xh6" firstAttribute="trailing" secondItem="VMi-EI-xGk" secondAttribute="trailing" constant="50" id="5Ep-cT-yhb"/>
+                            <constraint firstItem="5Fu-bC-Xh6" firstAttribute="trailing" secondItem="VMi-EI-xGk" secondAttribute="trailing" constant="10" id="5Ep-cT-yhb"/>
                             <constraint firstItem="4mm-XZ-BL0" firstAttribute="top" secondItem="9Va-mm-Ru3" secondAttribute="bottom" constant="3" id="BF3-ok-OBK"/>
                             <constraint firstItem="oVp-gw-KGW" firstAttribute="leading" secondItem="5Fu-bC-Xh6" secondAttribute="leading" constant="102" id="FcU-oQ-6fq"/>
                             <constraint firstItem="9Va-mm-Ru3" firstAttribute="top" secondItem="bh7-CV-w1B" secondAttribute="bottom" constant="45" id="Pc8-t1-guY"/>
@@ -701,6 +717,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MtZ-NT-3RM"/>
+        <segue reference="qvL-FT-Kus"/>
     </inferredMetricsTieBreakers>
 </document>
