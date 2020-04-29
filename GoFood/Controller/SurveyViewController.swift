@@ -27,7 +27,10 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
     let q2 = SurveyQuestion(q: "Feeling adventurous?", op1: "Yes!", op2: "Not Really")
     let q3 = SurveyQuestion(q: "What about budget?", op1: "$$$$", op2: "$")
     let q4 = SurveyQuestion(q: "Down to exercise?", op1: "walk", op2: "drive")
+    let q5 = SurveyQuestion(q: "Asian food?", op1: "Yes!", op2: "meh")
+    let q6 = SurveyQuestion(q: "Western food?", op1: "Yes!", op2: "meh")
     var questions: [SurveyQuestion]!
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions.count
@@ -38,12 +41,11 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
             cell.question.text = questions[indexPath.row].q
             cell.optionOne.setTitle(questions[indexPath.row].op1, for: .normal)
             cell.optionTwo.setTitle(questions[indexPath.row].op2, for: .normal)
-            cell.optionOne.setTitleColor(UIColor(cgColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor), for: .normal)
-            cell.optionTwo.setTitleColor(UIColor(cgColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor), for: .normal)
             return cell
         }
         return UITableViewCell()
     }
+    
     
 
     override func viewDidLoad() {
@@ -62,24 +64,42 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
         goFood.setTitleColor(UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1), for: .normal)
         goFood.titleLabel!.font = UIFont(name: "RockSalt", size: 30)
         goFood.clipsToBounds = true
-        //layer code that does not work
-        /*let layer1 = CALayer()
-        layer1.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        layer1.bounds = goFood.bounds
-        layer1.position = goFood.center
-        goFood.layer.addSublayer(layer1)*/
         goFood.layer.cornerRadius = 30
         goFood.layer.borderWidth = 3
         goFood.layer.borderColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1).cgColor
         
         //setting tableview
-        questions = [q1, q2, q3, q4]
+        questions = [q1, q2, q3, q4, q5, q6]
         SurveyTableView.delegate = self
         SurveyTableView.dataSource = self
     
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func findFood(_ sender: UIButton) {
+        var index = 0
+        for cell in self.SurveyTableView!.visibleCells {
+            let surveyCell = cell as! SurveyTableViewCell
+            updatePreference(index: index, onePressed: surveyCell.onePressed)
+            index += 1
+        }
+    }
+    
+    func updatePreference(index: Int, onePressed: Bool) {
+        if index == 0 {
+            Preference.busy = onePressed
+        } else if index == 1 {
+            Preference.new = onePressed
+        } else if index == 2 {
+            Preference.budget = onePressed
+        } else if index == 3 {
+            Preference.walk = onePressed
+        } else if index == 4 {
+            Preference.asian = onePressed
+        } else if index == 5 {
+            Preference.western = onePressed
+        }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let _ = sender as? UIButton, let dest = segue.destination as? GoFoodViewController {

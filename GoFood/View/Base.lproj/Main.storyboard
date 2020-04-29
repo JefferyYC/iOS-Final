@@ -150,6 +150,7 @@
                                 </constraints>
                                 <state key="normal" title="Go Food!"/>
                                 <connections>
+                                    <action selector="findFood:" destination="S1h-Eu-E2W" eventType="touchUpInside" id="BJg-VM-hs9"/>
                                     <segue destination="pTe-hT-VUI" kind="show" identifier="search" id="RMd-1c-cwE"/>
                                 </connections>
                             </button>
@@ -180,6 +181,9 @@
                                                         <constraint firstAttribute="height" constant="40" id="Zdk-Bp-kT0"/>
                                                     </constraints>
                                                     <state key="normal" title="Chilling"/>
+                                                    <connections>
+                                                        <action selector="pressTwo:" destination="W7q-fN-hfU" eventType="touchUpInside" id="3CJ-8Q-Pk1"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-C1-Rbx">
                                                     <rect key="frame" x="49" y="70" width="120" height="40"/>
@@ -188,6 +192,9 @@
                                                         <constraint firstAttribute="width" constant="120" id="Orv-3U-Ofs"/>
                                                     </constraints>
                                                     <state key="normal" title="Busy"/>
+                                                    <connections>
+                                                        <action selector="pressOne:" destination="W7q-fN-hfU" eventType="touchUpInside" id="ZfD-Rk-9Os"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
