@@ -20,19 +20,20 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
        
     
-    struct foods {
-              var image: String
-              var name: String
-              var type: String
-          }
+    //struct foods {
+    //          var image: String
+    //          var name: String
+    //          var type: String
+    //      }
           
-    let f1 = foods(image: "duck", name: "DaDong", type: "Chinese Food")
-    let f2 = foods(image: "brunch", name: "Morning Cafe", type: "Brunch")
-    let f3 = foods(image: "kiraku", name: "Kiraku", type: "Japanese Food")
-    let f4 = foods(image: "spanish", name: "Crazy Ones", type: "Spanish Food")
+    //let f1 = foods(image: "duck", name: "DaDong", type: "Chinese Food")
+    //let f2 = foods(image: "brunch", name: "Morning Cafe", type: "Brunch")
+    //let f3 = foods(image: "kiraku", name: "Kiraku", type: "Japanese Food")
+    //let f4 = foods(image: "spanish", name: "Crazy Ones", type: "Spanish Food")
        
-    var foodslist: [foods]!
+    //var foodslist: [foods] = []
     
+    let foodslist = FavFood.foodslist
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         homebackground.image = UIImage(named: "homeback")
         myfood.textColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1)
         myfood.font = UIFont(name: "RockSalt", size: 56)
-        foodslist = [f1, f2, f3, f4]
+      //  foodslist = [f1, f2, f3, f4]
+        //foodslist.append(f2)
 //        foodlist.rowHeight = UITableView.automaticDimension
 //        foodlist.estimatedRowHeight = 600
         foodlist.rowHeight = 150
@@ -61,13 +63,36 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.resname.font = UIFont(name: "RockSalt", size:20)
             cell.restype.text = foodslist[indexPath.row].type
             cell.restype.font = UIFont(name: "RockSalt", size:12)
-            cell.resfood.image = UIImage(named: foodslist[indexPath.row].image)
+           // cell.resfood.image = foodslist[indexPath.row].image
+            fetchImage(link: foodslist[indexPath.row].imageURL, imageView: cell.resfood)
             cell.contentView.backgroundColor = UIColor(red: 0.848, green: 0.856, blue: 0.862, alpha: 1)
             return cell
         } else {
             return UITableViewCell()
         }
     }
+    
+    func fetchImage(link: String, imageView: UIImageView?) -> UIImage? {
+           let imageURL = URL(string: link)
+           var image: UIImage?
+           if let url = imageURL {
+               //All network operations has to run on different thread(not on main thread).
+               DispatchQueue.global(qos: .userInitiated).async {
+                   let imageData = NSData(contentsOf: url)
+                   //All UI operations has to run on main thread.
+                   DispatchQueue.main.async {
+                       if imageData != nil && imageView != nil  {
+                           image = UIImage(data: imageData as! Data)
+                           imageView!.image = image
+                           imageView!.sizeToFit()
+                       } else {
+                           image = UIImage()
+                       }
+                   }
+               }
+           }
+           return image
+       }
     /*
     // MARK: - Navigation
 

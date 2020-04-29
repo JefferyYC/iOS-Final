@@ -83,7 +83,12 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let _ = sender as? UIButton, let dest = segue.destination as? GoFoodViewController {
-            dest.yelpName = "Test sender"
+            dest.yelpName = "Kiraku"
+            dest.yelpLabel = "Japanese Food"
+            dest.yelpReview = "Everything is great. But I highly recommend the lucky box!"
+            dest.yelpInfo = "⏰：5:00pm - 8:00pm\n\nPrice: $$\n\nYelp rating: ⭐️⭐️⭐️⭐️"
+            dest.yelpPic1URL = "https://s3-media0.fl.yelpcdn.com/bphoto/0Uh2XjrVJf_jJXs9I4o3YQ/258s.jpg"
+            dest.yelpPic2URL = "https://s3-media0.fl.yelpcdn.com/bphoto/xZd0ncowegEWn_JO-WKheg/258s.jpg"
         }
     }
     /*

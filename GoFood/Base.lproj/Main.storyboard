@@ -10,7 +10,7 @@
         <!--MyFood-->
         <scene sceneID="YZP-aZ-JbE">
             <objects>
-                <viewController title="MyFood" id="Zqm-hV-Sgj" customClass="HomeViewController" customModule="GoFood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="MyFood" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zqm-hV-Sgj" customClass="HomeViewController" customModule="GoFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O9T-5X-3pd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -333,6 +333,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="likeFood:" destination="pTe-hT-VUI" eventType="touchUpInside" id="7zf-pH-woE"/>
                                     <segue destination="pTe-hT-VUI" kind="show" id="VmX-UM-NYM"/>
                                 </connections>
                             </button>
