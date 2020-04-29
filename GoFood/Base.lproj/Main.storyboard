@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJU-AF-ztk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WEK-gD-SVU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -600,13 +600,30 @@
                                 <state key="normal" title="SignUp!">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signuppressed:" destination="WEK-gD-SVU" eventType="touchUpInside" id="rqQ-Bd-x7Y"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMi-EI-xGk">
+                                <rect key="frame" x="50" y="545.5" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hLb-6X-AMJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="VMi-EI-xGk" firstAttribute="top" secondItem="Sh6-if-GkN" secondAttribute="bottom" constant="15" id="1u7-st-vq2"/>
                             <constraint firstItem="5Fu-bC-Xh6" firstAttribute="trailing" secondItem="jbQ-Qx-rE4" secondAttribute="trailing" constant="50" id="2Bx-AM-Q6h"/>
+                            <constraint firstItem="VMi-EI-xGk" firstAttribute="leading" secondItem="5Fu-bC-Xh6" secondAttribute="leading" constant="50" id="2Kp-kd-SDZ"/>
                             <constraint firstItem="37r-Cd-dUr" firstAttribute="top" secondItem="5Fu-bC-Xh6" secondAttribute="top" constant="85" id="3bt-Sk-b0R"/>
                             <constraint firstItem="5Fu-bC-Xh6" firstAttribute="trailing" secondItem="9Va-mm-Ru3" secondAttribute="trailing" constant="50" id="4ls-G7-VCg"/>
+                            <constraint firstItem="5Fu-bC-Xh6" firstAttribute="trailing" secondItem="VMi-EI-xGk" secondAttribute="trailing" constant="50" id="5Ep-cT-yhb"/>
                             <constraint firstItem="4mm-XZ-BL0" firstAttribute="top" secondItem="9Va-mm-Ru3" secondAttribute="bottom" constant="3" id="BF3-ok-OBK"/>
                             <constraint firstItem="oVp-gw-KGW" firstAttribute="leading" secondItem="5Fu-bC-Xh6" secondAttribute="leading" constant="102" id="FcU-oQ-6fq"/>
                             <constraint firstItem="9Va-mm-Ru3" firstAttribute="top" secondItem="bh7-CV-w1B" secondAttribute="bottom" constant="45" id="Pc8-t1-guY"/>
@@ -632,6 +649,7 @@
                         <outlet property="background" destination="Aru-cW-Mld" id="9RW-Yc-uMt"/>
                         <outlet property="emaillabel" destination="37r-Cd-dUr" id="aq0-Gl-qKk"/>
                         <outlet property="emailtext" destination="bh7-CV-w1B" id="P5w-Di-ACc"/>
+                        <outlet property="error" destination="VMi-EI-xGk" id="Egf-Rg-1Ia"/>
                         <outlet property="passwordlabel" destination="9Va-mm-Ru3" id="q8F-F5-eyU"/>
                         <outlet property="passwordtext" destination="4mm-XZ-BL0" id="RFy-fH-4Zf"/>
                         <outlet property="retypelabel" destination="jbQ-Qx-rE4" id="42y-P9-QEy"/>

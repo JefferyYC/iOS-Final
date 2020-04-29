@@ -10,5 +10,8 @@ target 'GoFood' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+ 
 
 end
