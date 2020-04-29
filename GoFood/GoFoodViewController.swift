@@ -23,15 +23,23 @@ class GoFoodViewController: UIViewController {
     @IBOutlet weak var signature: UILabel!
     @IBOutlet weak var sample1Pic: UIImageView!
     @IBOutlet weak var sample2Pic: UIImageView!
-    @IBOutlet weak var sample1Name: UILabel!
-    @IBOutlet weak var sample2Name: UILabel!
+
+    @IBOutlet weak var backButton: UIButton!
+    
+    var yelpName: String = ""
+    var yelpLabel: String = ""
+    var yelpReview: String = ""
+    var yelpInfo: String = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         //header part
         background.image = UIImage(named: "goFoodBG")
         restaurantName.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        restaurantName.text = "Kiraku"
+        //restaurantName.text = "Kiraku"
+        restaurantName.text = yelpName
         restaurantName.font = UIFont(name: "RockSalt", size: 30)
         restaurantType.text = "Japanese Food"
         restaurantType.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
@@ -48,7 +56,7 @@ class GoFoodViewController: UIViewController {
         //core information
         info.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         info.font = UIFont(name:"Noteworthy-Bold", size: 18)
-        info.text = "⏰：5:00pm - 8:00pm\n\nDistance: walk 12 min\n\nYelp rating: ⭐️⭐️⭐️⭐️"
+        info.text = "⏰：5:00pm - 8:00pm\n\nPrice: $$\n\nYelp rating: ⭐️⭐️⭐️⭐️"
         
         //buttons
         setButton(button: dislikeButton, title: "❌")
@@ -62,10 +70,14 @@ class GoFoodViewController: UIViewController {
         signature.font = UIFont(name: "RockSalt", size: 30)
         setImage(image: sample1Pic, name: "cornTempura", curv: CGFloat(0))
         setImage(image: sample2Pic, name: "karaage", curv: CGFloat(0))
-        sample1Name.text = "Corn Tempura"
-        sample1Name.font = UIFont(name: "Noteworthy-Bold", size: 15)
-        sample2Name.text = "Chicken Karaage"
-        sample2Name.font = UIFont(name: "Noteworthy-Bold", size: 15)
+        
+        //back
+        backButton.setTitleColor(UIColor(red: 0.996, green: 0.732, blue: 0.336, alpha: 1), for: .normal)
+        backButton.titleLabel?.font = UIFont(name: "RockSalt", size: 20)
+
+        
+
+        
         
         // Do any additional setup after loading the view.
     }

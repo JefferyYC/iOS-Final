@@ -150,7 +150,7 @@
                                 </constraints>
                                 <state key="normal" title="Go Food!"/>
                                 <connections>
-                                    <segue destination="pTe-hT-VUI" kind="show" id="RMd-1c-cwE"/>
+                                    <segue destination="pTe-hT-VUI" kind="show" identifier="search" id="RMd-1c-cwE"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Kq-7e-kA4">
@@ -264,9 +264,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzB-jM-5P7">
-                                <rect key="frame" x="10" y="20" width="30" height="30"/>
+                                <rect key="frame" x="10" y="20" width="123" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="&lt;"/>
+                                <state key="normal" title="&lt; BACK"/>
                                 <connections>
                                     <segue destination="GMD-tb-n5J" kind="show" id="t3d-rT-hW6"/>
                                 </connections>
@@ -348,23 +348,9 @@
                                     <constraint firstAttribute="width" secondItem="FYy-wP-Tu4" secondAttribute="height" multiplier="5:4" id="1aj-wa-yaM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moX-Hf-9KG">
-                                <rect key="frame" x="110" y="599" width="123.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfy-Im-V8S">
-                                <rect key="frame" x="274.5" y="599" width="124.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lfy-Im-V8S" firstAttribute="trailing" secondItem="FYy-wP-Tu4" secondAttribute="trailing" id="0JR-YI-fAP"/>
-                            <constraint firstItem="glz-aH-RLa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lfy-Im-V8S" secondAttribute="bottom" constant="20" id="0lf-xt-ecz"/>
                             <constraint firstItem="Tsi-bh-E3M" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="20" id="1Nt-hy-lDd"/>
                             <constraint firstItem="utR-nu-n9i" firstAttribute="trailing" secondItem="Gv3-jl-kpN" secondAttribute="trailing" constant="179.5" id="3rP-8S-Csd"/>
                             <constraint firstItem="uzB-jM-5P7" firstAttribute="top" secondItem="utR-nu-n9i" secondAttribute="top" constant="20" id="6HU-YY-c8T"/>
@@ -381,20 +367,14 @@
                             <constraint firstItem="utR-nu-n9i" firstAttribute="leading" secondItem="5LJ-1T-Jwl" secondAttribute="leading" constant="-110" id="SJj-34-RWn"/>
                             <constraint firstItem="XLe-bk-yIo" firstAttribute="centerX" secondItem="utR-nu-n9i" secondAttribute="centerX" id="T9d-0N-FSQ"/>
                             <constraint firstItem="pIL-tF-80r" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="20" id="Ttt-rp-5Kz"/>
-                            <constraint firstItem="moX-Hf-9KG" firstAttribute="top" secondItem="Gv3-jl-kpN" secondAttribute="bottom" constant="10" id="V9S-uR-PL0"/>
                             <constraint firstItem="mIj-TK-ei6" firstAttribute="bottom" secondItem="GJR-oA-iku" secondAttribute="bottom" constant="-150" id="VWB-tT-3CW"/>
-                            <constraint firstItem="lfy-Im-V8S" firstAttribute="top" secondItem="FYy-wP-Tu4" secondAttribute="bottom" constant="10" id="VzI-KH-6dq"/>
                             <constraint firstItem="mIj-TK-ei6" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="110" id="ZZk-Ro-1H8"/>
-                            <constraint firstItem="XLe-bk-yIo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="moX-Hf-9KG" secondAttribute="bottom" constant="20" id="ZeH-a4-t5C"/>
                             <constraint firstItem="utR-nu-n9i" firstAttribute="trailing" secondItem="pIL-tF-80r" secondAttribute="trailing" constant="20" id="ZfA-YY-ltA"/>
                             <constraint firstItem="XLe-bk-yIo" firstAttribute="bottom" secondItem="utR-nu-n9i" secondAttribute="bottom" constant="-40" id="aTt-Aq-LFs"/>
-                            <constraint firstItem="moX-Hf-9KG" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="110" id="bPl-mP-kOm"/>
                             <constraint firstItem="GJR-oA-iku" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="90" id="bY8-L1-5oZ"/>
                             <constraint firstItem="utR-nu-n9i" firstAttribute="trailing" secondItem="GJR-oA-iku" secondAttribute="trailing" constant="30" id="c7J-aB-g0b"/>
-                            <constraint firstItem="lfy-Im-V8S" firstAttribute="leading" secondItem="FYy-wP-Tu4" secondAttribute="leading" id="cJ5-Pg-P3J"/>
                             <constraint firstItem="utR-nu-n9i" firstAttribute="bottom" secondItem="GJR-oA-iku" secondAttribute="bottom" constant="200" id="fi3-di-uIe"/>
                             <constraint firstItem="mIj-TK-ei6" firstAttribute="top" secondItem="GJR-oA-iku" secondAttribute="top" constant="10" id="gyN-yb-PNm"/>
-                            <constraint firstItem="moX-Hf-9KG" firstAttribute="width" secondItem="Gv3-jl-kpN" secondAttribute="width" multiplier="0.99" id="hjP-5R-5Sj"/>
                             <constraint firstItem="utR-nu-n9i" firstAttribute="trailing" secondItem="9ZL-VC-9PC" secondAttribute="trailing" constant="20" id="hk3-Df-tbJ"/>
                             <constraint firstItem="FYy-wP-Tu4" firstAttribute="height" secondItem="Gv3-jl-kpN" secondAttribute="height" id="j51-1Y-foA"/>
                             <constraint firstItem="utR-nu-n9i" firstAttribute="trailing" secondItem="glz-aH-RLa" secondAttribute="trailing" constant="20" id="jM1-SV-0Aw"/>
@@ -414,6 +394,7 @@
                     <navigationItem key="navigationItem" id="0wE-Ki-eQZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="backButton" destination="uzB-jM-5P7" id="yBC-K7-krS"/>
                         <outlet property="background" destination="Tnk-Ky-wCM" id="ydy-OS-49E"/>
                         <outlet property="dislikeButton" destination="Uvm-jj-Qcy" id="WIP-lU-jEM"/>
                         <outlet property="filter" destination="GJR-oA-iku" id="aay-4G-Gtg"/>
@@ -423,9 +404,7 @@
                         <outlet property="restaurantName" destination="9ZL-VC-9PC" id="IaS-CP-a4i"/>
                         <outlet property="restaurantType" destination="pIL-tF-80r" id="XOu-6Q-FfT"/>
                         <outlet property="review" destination="Tsi-bh-E3M" id="0hW-lf-7bJ"/>
-                        <outlet property="sample1Name" destination="moX-Hf-9KG" id="ezd-Cy-IXV"/>
                         <outlet property="sample1Pic" destination="Gv3-jl-kpN" id="BWn-60-wG9"/>
-                        <outlet property="sample2Name" destination="lfy-Im-V8S" id="bih-eE-57F"/>
                         <outlet property="sample2Pic" destination="FYy-wP-Tu4" id="2x9-UY-WbJ"/>
                         <outlet property="signature" destination="5LJ-1T-Jwl" id="pXu-ee-0nw"/>
                     </connections>
@@ -529,10 +508,10 @@
             </objects>
             <point key="canvasLocation" x="-531.8840579710145" y="-433.25892857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="XMX-YG-gp2">
             <objects>
-                <tabBarController id="GMD-tb-n5J" sceneMemberID="viewController">
+                <tabBarController id="GMD-tb-n5J" customClass="MainTabBarController" customModule="GoFood" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="9nj-jI-yrp"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zVx-2T-Zj6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

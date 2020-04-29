@@ -36,6 +36,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         foodlist.dataSource = self
         foodlist.delegate = self
         homebackground.image = UIImage(named: "homeback")

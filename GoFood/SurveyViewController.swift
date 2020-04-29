@@ -48,7 +48,6 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //setting background
         background.image = UIImage(named: "surveyBG")
         
@@ -81,7 +80,12 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
     }
     
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let _ = sender as? UIButton, let dest = segue.destination as? GoFoodViewController {
+            dest.yelpName = "Test sender"
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -92,4 +96,5 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
     }
     */
 
+    //
 }
