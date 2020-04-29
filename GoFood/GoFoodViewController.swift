@@ -23,19 +23,33 @@ class GoFoodViewController: UIViewController {
     @IBOutlet weak var signature: UILabel!
     @IBOutlet weak var sample1Pic: UIImageView!
     @IBOutlet weak var sample2Pic: UIImageView!
-    @IBOutlet weak var sample1Name: UILabel!
-    @IBOutlet weak var sample2Name: UILabel!
+
+    @IBOutlet weak var backButton: UIButton!
+    
+    //variables to store information sent from survey page
+    var yelpName: String = ""
+    var yelpLabel: String = ""
+    var yelpReview: String = ""
+    var yelpInfo: String = ""
+    var yelpPic1URL: String = "" //url for the picture
+    var yelpPic2URL: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //fetch image
+        fetchImage(link: yelpPic1URL, imageView: sample1Pic)
+        fetchImage(link: yelpPic2URL, imageView: sample2Pic)
+
         //header part
         background.image = UIImage(named: "goFoodBG")
         restaurantName.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        restaurantName.text = "Kiraku"
+        restaurantName.text = yelpName
         restaurantName.font = UIFont(name: "RockSalt", size: 30)
-        restaurantType.text = "Japanese Food"
+        restaurantType.text = yelpLabel
         restaurantType.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         restaurantType.font = UIFont(name: "RockSalt", size: 15)
+        review.text = yelpReview
         review.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         review.font = UIFont(name: "Noteworthy-Bold", size: 18)
         
@@ -48,7 +62,7 @@ class GoFoodViewController: UIViewController {
         //core information
         info.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         info.font = UIFont(name:"Noteworthy-Bold", size: 18)
-        info.text = "⏰：5:00pm - 8:00pm\n\nDistance: walk 12 min\n\nYelp rating: ⭐️⭐️⭐️⭐️"
+        info.text = yelpInfo
         
         //buttons
         setButton(button: dislikeButton, title: "❌")
@@ -60,13 +74,13 @@ class GoFoodViewController: UIViewController {
         //signature dishes
         signature.text = "Signature Dish"
         signature.font = UIFont(name: "RockSalt", size: 30)
-        setImage(image: sample1Pic, name: "cornTempura", curv: CGFloat(0))
-        setImage(image: sample2Pic, name: "karaage", curv: CGFloat(0))
-        sample1Name.text = "Corn Tempura"
-        sample1Name.font = UIFont(name: "Noteworthy-Bold", size: 15)
-        sample2Name.text = "Chicken Karaage"
-        sample2Name.font = UIFont(name: "Noteworthy-Bold", size: 15)
         
+        
+        //back
+        backButton.setTitleColor(UIColor(red: 0.996, green: 0.732, blue: 0.336, alpha: 1), for: .normal)
+        backButton.titleLabel?.font = UIFont(name: "RockSalt", size: 20)
+        
+
         // Do any additional setup after loading the view.
     }
     
@@ -79,12 +93,34 @@ class GoFoodViewController: UIViewController {
         button.setTitle(title, for: .normal)
     }
 
-    func setImage(image:UIImageView, name:String, curv: CGFloat) {
-        image.image = UIImage(named: name)
-        image.layer.cornerRadius = curv
-        image.layer.masksToBounds = false
-        image.clipsToBounds = true
-}
+    
+    //todo: load image from URL
+    func fetchImage(link: String, imageView: UIImageView?) -> UIImage? {
+        let imageURL = URL(string: link)
+        var image: UIImage?
+        if let url = imageURL {
+            //All network operations has to run on different thread(not on main thread).
+            DispatchQueue.global(qos: .userInitiated).async {
+                let imageData = NSData(contentsOf: url)
+                //All UI operations has to run on main thread.
+                DispatchQueue.main.async {
+                    if imageData != nil && imageView != nil  {
+                        image = UIImage(data: imageData as! Data)
+                        imageView!.image = image
+                        imageView!.sizeToFit()
+                    } else {
+                        image = UIImage()
+                    }
+                }
+            }
+        }
+        return image
+    }
+    
+    
+    @IBAction func likeFood(_ sender: UIButton) {
+        FavFood.foodslist.append(FavFood.foods(imageURL: yelpPic1URL, name: "Morning Cafe", type: "Brunch"))
+    }
     /*
     // MARK: - Navigation
 
