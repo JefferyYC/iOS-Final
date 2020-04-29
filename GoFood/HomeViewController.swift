@@ -72,7 +72,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
-    func fetchImage(link: String, imageView: UIImageView?) -> UIImage? {
+    func fetchImage(link: String, imageView: UIImageView?){
            let imageURL = URL(string: link)
            var image: UIImage?
            if let url = imageURL {
@@ -91,8 +91,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                    }
                }
            }
-           return image
-       }
+    }
     /*
     // MARK: - Navigation
 
