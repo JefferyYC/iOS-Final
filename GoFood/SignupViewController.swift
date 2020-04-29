@@ -67,6 +67,12 @@ class SignupViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //hide the nav bar on login page
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     
     func validation() -> String? {
         if emailtext.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordtext.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || retypetext.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
@@ -102,7 +108,8 @@ class SignupViewController: UIViewController {
                 } else {
                     let db = Firestore.firestore()
                     db.collection("users").addDocument(data: ["email": email, "password": password, "uid": res!.user.uid])
-//                    self.performSegue(withIdentifier: "goback", sender: nil)
+                    self.performSegue(withIdentifier: "gos", sender: nil)
+//                    self.dismiss(animated: true, completion: nil)
                 }
                 
                 
