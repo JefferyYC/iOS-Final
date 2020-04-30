@@ -12,15 +12,14 @@
 		3F9EAE1F244FCBBA000163B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */; };
 		3F9EAE23245015A8000163B4 /* MyFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */; };
 		B2F9D2FBD1BBB8D644F2C9F3 /* Pods_GoFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B34DD7871D8411869BB621 /* Pods_GoFood.framework */; };
+		D8252EC3245A285900A9045B /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8252EC2245A285900A9045B /* Preference.swift */; };
 		D8595D57245914D20088E58D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8595D56245914D10088E58D /* MainTabBarController.swift */; };
 		D8595D5924593E180088E58D /* FavFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8595D5824593E180088E58D /* FavFood.swift */; };
 		D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7202244D6092005CB33C /* AppDelegate.swift */; };
 		D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7204244D6092005CB33C /* SceneDelegate.swift */; };
-		D86D7207244D6092005CB33C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7206244D6092005CB33C /* ViewController.swift */; };
 		D86D720A244D6092005CB33C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86D7208244D6092005CB33C /* Main.storyboard */; };
 		D86D720D244D6092005CB33C /* GoFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D86D720B244D6092005CB33C /* GoFood.xcdatamodeld */; };
 		D86D720F244D6095005CB33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86D720E244D6095005CB33C /* Assets.xcassets */; };
-		D86D7212244D6095005CB33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86D7210244D6095005CB33C /* LaunchScreen.storyboard */; };
 		D8DAAAC8244E4AE800560028 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DAAAC7244E4AE800560028 /* SurveyViewController.swift */; };
 		D8DAAACA244E4B0D00560028 /* SurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DAAAC9244E4B0D00560028 /* SurveyTableViewCell.swift */; };
 		D8DAAACE244EB34B00560028 /* GoFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */; };
@@ -36,16 +35,15 @@
 		3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFoodTableViewCell.swift; sourceTree = "<group>"; };
 		605B0D75E0FE3F44B06AABFC /* Pods-GoFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoFood.debug.xcconfig"; path = "Target Support Files/Pods-GoFood/Pods-GoFood.debug.xcconfig"; sourceTree = "<group>"; };
+		D8252EC2245A285900A9045B /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		D8595D56245914D10088E58D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D8595D5824593E180088E58D /* FavFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavFood.swift; sourceTree = "<group>"; };
 		D86D71FF244D6092005CB33C /* GoFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86D7202244D6092005CB33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D86D7204244D6092005CB33C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D86D7206244D6092005CB33C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D86D7209244D6092005CB33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D86D720C244D6092005CB33C /* GoFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoFood.xcdatamodel; sourceTree = "<group>"; };
 		D86D720E244D6095005CB33C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D86D7211244D6095005CB33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D86D7213244D6095005CB33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8DAAAC7244E4AE800560028 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		D8DAAAC9244E4B0D00560028 /* SurveyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTableViewCell.swift; sourceTree = "<group>"; };
@@ -77,6 +75,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D8252EC4245A28C400A9045B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8252EC2245A285900A9045B /* Preference.swift */,
+				D8595D5824593E180088E58D /* FavFood.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8252EC5245A28E600A9045B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */,
+				3F2DF35024580B9A0034F18C /* SignupViewController.swift */,
+				D8DAAAC7244E4AE800560028 /* SurveyViewController.swift */,
+				D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */,
+				3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8252EC6245A299500A9045B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D86D7208244D6092005CB33C /* Main.storyboard */,
+				D8DAAAC9244E4B0D00560028 /* SurveyTableViewCell.swift */,
+				3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */,
+				D8DAAAD3245005E300560028 /* SegueFromLeft.swift */,
+				D8595D56245914D10088E58D /* MainTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D86D71F6244D6092005CB33C = {
 			isa = PBXGroup;
 			children = (
@@ -99,21 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				D86D7202244D6092005CB33C /* AppDelegate.swift */,
-				D8595D56245914D10088E58D /* MainTabBarController.swift */,
 				D86D7204244D6092005CB33C /* SceneDelegate.swift */,
-				D86D7206244D6092005CB33C /* ViewController.swift */,
-				D8DAAAC7244E4AE800560028 /* SurveyViewController.swift */,
-				3F9EAE1C244FA5EE000163B4 /* LogInViewController.swift */,
-				D8DAAAC9244E4B0D00560028 /* SurveyTableViewCell.swift */,
-				D86D7208244D6092005CB33C /* Main.storyboard */,
-				3F2DF35024580B9A0034F18C /* SignupViewController.swift */,
-				3F9EAE22245015A8000163B4 /* MyFoodTableViewCell.swift */,
-				D8DAAAD3245005E300560028 /* SegueFromLeft.swift */,
-				D8DAAACD244EB34B00560028 /* GoFoodViewController.swift */,
-				3F9EAE1E244FCBBA000163B4 /* HomeViewController.swift */,
-				D8595D5824593E180088E58D /* FavFood.swift */,
+				D8252EC4245A28C400A9045B /* Model */,
+				D8252EC6245A299500A9045B /* View */,
+				D8252EC5245A28E600A9045B /* Controller */,
 				D86D720E244D6095005CB33C /* Assets.xcassets */,
-				D86D7210244D6095005CB33C /* LaunchScreen.storyboard */,
 				D86D7213244D6095005CB33C /* Info.plist */,
 				D86D720B244D6092005CB33C /* GoFood.xcdatamodeld */,
 				D8DAAAD1244FD86600560028 /* GoogleService-Info.plist */,
@@ -190,7 +211,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D86D7212244D6095005CB33C /* LaunchScreen.storyboard in Resources */,
 				D8DAAAD0244FD81400560028 /* RockSalt.ttf in Resources */,
 				D8DAAAD2244FD86600560028 /* GoogleService-Info.plist in Resources */,
 				D86D720F244D6095005CB33C /* Assets.xcassets in Resources */,
@@ -247,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D86D7207244D6092005CB33C /* ViewController.swift in Sources */,
 				D8DAAACA244E4B0D00560028 /* SurveyTableViewCell.swift in Sources */,
 				D8595D57245914D20088E58D /* MainTabBarController.swift in Sources */,
 				D8DAAACE244EB34B00560028 /* GoFoodViewController.swift in Sources */,
@@ -257,6 +276,7 @@
 				3F2DF35124580B9A0034F18C /* SignupViewController.swift in Sources */,
 				3F9EAE1F244FCBBA000163B4 /* HomeViewController.swift in Sources */,
 				D8595D5924593E180088E58D /* FavFood.swift in Sources */,
+				D8252EC3245A285900A9045B /* Preference.swift in Sources */,
 				D86D7203244D6092005CB33C /* AppDelegate.swift in Sources */,
 				D86D7205244D6092005CB33C /* SceneDelegate.swift in Sources */,
 				D8DAAAD4245005E300560028 /* SegueFromLeft.swift in Sources */,
@@ -273,14 +293,6 @@
 				D86D7209244D6092005CB33C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D86D7210244D6095005CB33C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D86D7211244D6095005CB33C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

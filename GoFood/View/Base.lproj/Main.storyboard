@@ -150,7 +150,7 @@
                                 </constraints>
                                 <state key="normal" title="Go Food!"/>
                                 <connections>
-                                    <segue destination="pTe-hT-VUI" kind="show" identifier="search" id="RMd-1c-cwE"/>
+                                    <action selector="findFood:" destination="S1h-Eu-E2W" eventType="touchUpInside" id="BJg-VM-hs9"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Kq-7e-kA4">
@@ -180,6 +180,9 @@
                                                         <constraint firstAttribute="height" constant="40" id="Zdk-Bp-kT0"/>
                                                     </constraints>
                                                     <state key="normal" title="Chilling"/>
+                                                    <connections>
+                                                        <action selector="pressTwo:" destination="W7q-fN-hfU" eventType="touchUpInside" id="3CJ-8Q-Pk1"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-C1-Rbx">
                                                     <rect key="frame" x="49" y="70" width="120" height="40"/>
@@ -188,6 +191,9 @@
                                                         <constraint firstAttribute="width" constant="120" id="Orv-3U-Ofs"/>
                                                     </constraints>
                                                     <state key="normal" title="Busy"/>
+                                                    <connections>
+                                                        <action selector="pressOne:" destination="W7q-fN-hfU" eventType="touchUpInside" id="ZfD-Rk-9Os"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -236,11 +242,12 @@
                         <outlet property="date" destination="rKa-Wg-1PW" id="3ab-rB-JY1"/>
                         <outlet property="goFood" destination="haH-rh-gzM" id="Nmr-8U-Y3r"/>
                         <outlet property="temperature" destination="zpl-cU-0bF" id="8lo-P2-z3q"/>
+                        <segue destination="pTe-hT-VUI" kind="show" identifier="GoFood" id="EUY-pK-uk6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gI9-6t-kzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097.1014492753625" y="-771.42857142857144"/>
+            <point key="canvasLocation" x="2132" y="-792"/>
         </scene>
         <!--GoFood-->
         <scene sceneID="z7e-Io-bZx">
@@ -720,6 +727,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="EUY-pK-uk6"/>
         <segue reference="t3d-rT-hW6"/>
     </inferredMetricsTieBreakers>
 </document>
