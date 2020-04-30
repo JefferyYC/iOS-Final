@@ -24,7 +24,7 @@ class FavFood {
     var foodslist: [foods] = []
     let db = Firestore.firestore()
     let useremail = Auth.auth().currentUser!.email
-    func fetch() {
+    func fetch(completion: @escaping () -> Void) {
           db.collection("foodlist").whereField("user", isEqualTo: useremail!).getDocuments { (QueryFl, err) in
           if let err = err{
               print("Error getting foodlist")
@@ -35,6 +35,7 @@ class FavFood {
                   let ty = doc.data()["type"] as! String
                   self.foodslist.append(FavFood.foods(imageURL: img, name: na, type: ty))
                   }
+              completion()
               print(self.foodslist.count)
               print("DONE FETCHING!")
               }

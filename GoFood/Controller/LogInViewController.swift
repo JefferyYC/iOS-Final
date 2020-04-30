@@ -80,8 +80,9 @@ class LogInViewController: UIViewController {
                 self.error.textColor = UIColor.red
                 self.error.alpha = 1
             } else {
-                userfood.fetch()
-                self.performSegue(withIdentifier: "LogIn", sender: nil)
+                userfood.fetch(){
+                    self.performSegue(withIdentifier: "LogIn", sender: nil)
+                }
             }
         }
     }

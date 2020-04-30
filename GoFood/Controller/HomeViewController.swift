@@ -51,6 +51,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 //        userfood.fetch()
         foodlist.dataSource = self
         foodlist.delegate = self
+        print(foodslist.count)
         homebackground.image = UIImage(named: "homeback")
         myfood.textColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1)
         myfood.font = UIFont(name: "RockSalt", size: 56)

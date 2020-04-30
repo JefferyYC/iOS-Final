@@ -124,8 +124,8 @@ class GoFoodViewController: UIViewController {
     
     @IBAction func likeFood(_ sender: UIButton) {
 //        fetch()
-        userfood.foodslist.append(FavFood.foods(imageURL: yelpPic1URL, name: "Morning Cafe", type: "Brunch"))
-        userfood.addfoodtouser(img: yelpPic1URL, na: "Morning Cafe", ty: "Brunch")
+        userfood.foodslist.append(FavFood.foods(imageURL: yelpPic1URL, name: yelpName, type: yelpLabel))
+        userfood.addfoodtouser(img: yelpPic1URL, na: yelpName, ty: yelpLabel)
     }
     
 //    func addfoodtouser(img: String, na: String, ty: String) {
