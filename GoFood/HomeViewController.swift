@@ -91,7 +91,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "foodcell") as? MyFoodTableViewCell{
             cell.resname.text = foodslist[indexPath.row].name
-            print("lalallalal")
             cell.resname.font = UIFont(name: "RockSalt", size:20)
             cell.restype.text = foodslist[indexPath.row].type
             cell.restype.font = UIFont(name: "RockSalt", size:12)
@@ -100,7 +99,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.contentView.backgroundColor = UIColor(red: 0.848, green: 0.856, blue: 0.862, alpha: 1)
             return cell
         } else {
-            print("WRONG")
             return UITableViewCell()
         }
     }

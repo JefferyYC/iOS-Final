@@ -22,14 +22,10 @@ class FavFood {
           }
     //static var foodslist: [foods] = [foods(image: UIImage(named: "duck"), name: "DaDong", type: "Chinese Food")]
     var foodslist: [foods] = []
-    
     let db = Firestore.firestore()
-    
     let useremail = Auth.auth().currentUser!.email
-    
-    
     func fetch() {
-          db.collection("foodlist").whereField("user", isEqualTo: useremail).getDocuments { (QueryFl, err) in
+          db.collection("foodlist").whereField("user", isEqualTo: useremail!).getDocuments { (QueryFl, err) in
           if let err = err{
               print("Error getting foodlist")
           } else {
