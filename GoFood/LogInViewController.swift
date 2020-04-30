@@ -64,7 +64,12 @@ class LogInViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-
+    
+    
+    @IBAction func signuppressed(_ sender: Any) {
+        performSegue(withIdentifier: "signup", sender: nil)
+    }
+    
     @IBAction func loginpressed(_ sender: Any) {
         let email = username.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -75,6 +80,7 @@ class LogInViewController: UIViewController {
                 self.error.textColor = UIColor.red
                 self.error.alpha = 1
             } else {
+                userfood.fetch()
                 self.performSegue(withIdentifier: "LogIn", sender: nil)
             }
         }

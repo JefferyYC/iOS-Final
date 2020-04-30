@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
@@ -17,6 +19,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var foodlist: UITableView!
     
     @IBOutlet weak var homebackground: UIImageView!
+    
+    
     
        
     
@@ -33,11 +37,18 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
        
     //var foodslist: [foods] = []
     
-    let foodslist = FavFood.foodslist
+    let db = Firestore.firestore()
+    
+    let usere = Auth.auth().currentUser!.email!
+    
+//    var foodslist = [FavFood.foods]()
+    var foodslist = userfood.foodslist
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        userfood.fetch()
         foodlist.dataSource = self
         foodlist.delegate = self
         homebackground.image = UIImage(named: "homeback")
@@ -51,6 +62,26 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        foodlist.reloadData()
+    }
+    
+//    func fetch() {
+//        db.collection("foodlist").whereField("user", isEqualTo: usere).getDocuments { (QueryFl, err) in
+//        if let err = err{
+//            print("Error getting foodlist")
+//        } else {
+//            for doc in QueryFl!.documents{
+//                let img = doc.data()["image"] as! String
+//                let na = doc.data()["name"] as! String
+//                let ty = doc.data()["type"] as! String
+//                FavFood.foodslist.append(FavFood.foods(imageURL: img, name: na, type: ty))
+//                }
+//            print(FavFood.foodslist.count)
+//            print("DONE FETCHING!")
+//            }
+//        }
+//    }
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,6 +91,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "foodcell") as? MyFoodTableViewCell{
             cell.resname.text = foodslist[indexPath.row].name
+            print("lalallalal")
             cell.resname.font = UIFont(name: "RockSalt", size:20)
             cell.restype.text = foodslist[indexPath.row].type
             cell.restype.font = UIFont(name: "RockSalt", size:12)
@@ -68,6 +100,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.contentView.backgroundColor = UIColor(red: 0.848, green: 0.856, blue: 0.862, alpha: 1)
             return cell
         } else {
+            print("WRONG")
             return UITableViewCell()
         }
     }

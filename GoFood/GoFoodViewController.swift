@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class GoFoodViewController: UIViewController {
 
@@ -33,6 +35,8 @@ class GoFoodViewController: UIViewController {
     var yelpInfo: String = ""
     var yelpPic1URL: String = "" //url for the picture
     var yelpPic2URL: String = ""
+    let db = Firestore.firestore()
+    let useremail = Auth.auth().currentUser!.email
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,8 +123,35 @@ class GoFoodViewController: UIViewController {
     
     
     @IBAction func likeFood(_ sender: UIButton) {
-        FavFood.foodslist.append(FavFood.foods(imageURL: yelpPic1URL, name: "Morning Cafe", type: "Brunch"))
+//        fetch()
+//        FavFood.foodslist.append(FavFood.foods(imageURL: yelpPic1URL, name: "Morning Cafe", type: "Brunch"))
+        userfood.addfoodtouser(img: yelpPic1URL, na: "Morning Cafe", ty: "Brunch")
     }
+    
+//    func addfoodtouser(img: String, na: String, ty: String) {
+//        var ref: DocumentReference? = nil
+//        ref = db.collection("foodlist").addDocument(data: ["image": img, "name": na, "type": ty, "user": useremail!])
+//    }
+        
+    
+//    func fetch() {
+//        db.collection("foodlist").whereField("user", isEqualTo: useremail).getDocuments { (QueryFl, err) in
+//        if let err = err{
+//            print("Error getting foodlist")
+//        } else {
+//            for doc in QueryFl!.documents{
+//                let img = doc.data()["image"] as! String
+//                let na = doc.data()["name"] as! String
+//                let ty = doc.data()["type"] as! String
+//                FavFood.foodslist.append(FavFood.foods(imageURL: img, name: na, type: ty))
+//                }
+//            print(FavFood.foodslist.count)
+//            print("DONE FETCHING!")
+//            }
+//        }
+//    }
+    
+    
     /*
     // MARK: - Navigation
 

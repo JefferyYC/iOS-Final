@@ -108,8 +108,8 @@ class SignupViewController: UIViewController {
                 } else {
                     let db = Firestore.firestore()
                     db.collection("users").addDocument(data: ["email": email, "password": password, "uid": res!.user.uid])
-                    self.performSegue(withIdentifier: "gos", sender: nil)
-//                    self.dismiss(animated: true, completion: nil)
+//                    self.performSegue(withIdentifier: "gos", sender: nil)
+                    self.dismiss(animated: true, completion: nil)
                 }
                 
                 
