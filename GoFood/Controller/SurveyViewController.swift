@@ -39,12 +39,12 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
     
     var APIKey = "Bearer nq6q8YuZMPqqPKY9Vd5uSTWvvIZIBJ72UibL-s5uhF8mGvY7m35xIXqdc7xWNgHeCVADssi638vzM3--CsHX0r6GJ6DHqS3TBVKNskgWUzJYicyGrEcLwaX7vRmqXnYx"
     
-    let q1 = SurveyQuestion(q: "How are you doing today?", op1: "Busy", op2: "Chilling")
-    let q2 = SurveyQuestion(q: "Feeling adventurous?", op1: "Yes!", op2: "Not Really")
-    let q3 = SurveyQuestion(q: "What about budget?", op1: "$$$$", op2: "$")
-    let q4 = SurveyQuestion(q: "Down to exercise?", op1: "walk", op2: "drive")
-    let q5 = SurveyQuestion(q: "Asian food?", op1: "Yes!", op2: "meh")
-    let q6 = SurveyQuestion(q: "Western food?", op1: "Yes!", op2: "meh")
+    let q1 = SurveyQuestion(q: "How Are You Doing Today?", op1: "Busy", op2: "Chilling")
+    let q2 = SurveyQuestion(q: "Feeling Adventurous?", op1: "Yes!", op2: "Not Really")
+    let q3 = SurveyQuestion(q: "What about Budget?", op1: "$$$$", op2: "$")
+    let q4 = SurveyQuestion(q: "Down to Exercise?", op1: "Walk", op2: "Drive")
+    let q5 = SurveyQuestion(q: "On a Diet now?", op1: "Yes!", op2: "Not Really")
+//    let q6 = SurveyQuestion(q: "Western food?", op1: "Yes!", op2: "meh")
     var questions: [SurveyQuestion]!
     
     
@@ -97,7 +97,7 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
         goFood.layer.borderColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1).cgColor
         
         //setting tableview
-        questions = [q1, q2, q3, q4, q5, q6]
+        questions = [q1, q2, q3, q4, q5]
         SurveyTableView.delegate = self
         SurveyTableView.dataSource = self
         
