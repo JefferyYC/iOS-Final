@@ -158,7 +158,7 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
             guard let yelpData = data else { return }
             let json = try? JSONSerialization.jsonObject(with: yelpData, options: [])
             guard let dictionary = json as? [String: Any] else { return }
-            print(dictionary)
+            //print(dictionary)
             guard let business = dictionary["businesses"] as? [[String: Any]] else { return }
             let i = Int.random(in: 0...business.count)
             guard let id = business[i]["id"] as? String else { return }

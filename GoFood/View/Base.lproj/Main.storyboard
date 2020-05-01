@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJU-AF-ztk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJU-AF-ztk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msn-68-ArX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3007.2463768115945" y="-122.54464285714285"/>
+            <point key="canvasLocation" x="3042" y="39"/>
         </scene>
         <!--Survey-->
         <scene sceneID="GRU-o7-HIh">
@@ -322,7 +322,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="pTe-hT-VUI" kind="show" id="Spt-Yb-l0B"/>
+                                    <action selector="DislikeFood:" destination="pTe-hT-VUI" eventType="touchUpInside" id="WkU-4o-Ydv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-bk-yIo">
@@ -341,7 +341,6 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="likeFood:" destination="pTe-hT-VUI" eventType="touchUpInside" id="7zf-pH-woE"/>
-                                    <segue destination="pTe-hT-VUI" kind="show" id="VmX-UM-NYM"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gv3-jl-kpN">
@@ -356,6 +355,17 @@
                                     <constraint firstAttribute="width" secondItem="FYy-wP-Tu4" secondAttribute="height" multiplier="5:4" id="1aj-wa-yaM"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fM-HH-GA9">
+                                <rect key="frame" x="87" y="792" width="5" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="NoJ-gx-W30"/>
+                                    <constraint firstAttribute="height" constant="5" id="ad8-Zs-UOm"/>
+                                </constraints>
+                                <state key="normal" title="Dummy"/>
+                                <connections>
+                                    <segue destination="pTe-hT-VUI" kind="show" identifier="Dummy" id="3sK-lx-WW3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -370,6 +380,7 @@
                             <constraint firstItem="FYy-wP-Tu4" firstAttribute="leading" secondItem="Gv3-jl-kpN" secondAttribute="trailing" constant="40" id="F4I-ox-y1I"/>
                             <constraint firstItem="Gv3-jl-kpN" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="110" id="Gkn-2n-zHF"/>
                             <constraint firstItem="Uvm-jj-Qcy" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="20" id="Gws-4M-XGd"/>
+                            <constraint firstItem="9fM-HH-GA9" firstAttribute="leading" secondItem="utR-nu-n9i" secondAttribute="leading" constant="87" id="H7G-YD-Vri"/>
                             <constraint firstItem="Tsi-bh-E3M" firstAttribute="top" secondItem="pIL-tF-80r" secondAttribute="bottom" constant="10" id="Jqo-L4-JmE"/>
                             <constraint firstItem="glz-aH-RLa" firstAttribute="leading" secondItem="XLe-bk-yIo" secondAttribute="trailing" constant="20" id="PHz-Nu-ovw"/>
                             <constraint firstItem="utR-nu-n9i" firstAttribute="leading" secondItem="5LJ-1T-Jwl" secondAttribute="leading" constant="-110" id="SJj-34-RWn"/>
@@ -396,12 +407,14 @@
                             <constraint firstItem="utR-nu-n9i" firstAttribute="bottom" secondItem="5LJ-1T-Jwl" secondAttribute="bottom" constant="279.5" id="s68-4K-yFF"/>
                             <constraint firstItem="5LJ-1T-Jwl" firstAttribute="top" secondItem="mIj-TK-ei6" secondAttribute="bottom" constant="20" id="sgW-pD-iDq"/>
                             <constraint firstItem="9ZL-VC-9PC" firstAttribute="top" secondItem="utR-nu-n9i" secondAttribute="top" constant="55" id="u80-1t-SjI"/>
+                            <constraint firstItem="9fM-HH-GA9" firstAttribute="bottom" secondItem="utR-nu-n9i" secondAttribute="bottom" constant="38" id="xoT-97-s8U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="utR-nu-n9i"/>
                     </view>
                     <navigationItem key="navigationItem" id="0wE-Ki-eQZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="DummyButton" destination="9fM-HH-GA9" id="Ign-8Z-Ded"/>
                         <outlet property="backButton" destination="uzB-jM-5P7" id="yBC-K7-krS"/>
                         <outlet property="background" destination="Tnk-Ky-wCM" id="ydy-OS-49E"/>
                         <outlet property="dislikeButton" destination="Uvm-jj-Qcy" id="WIP-lU-jEM"/>
@@ -419,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rb7-TR-MTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3108.6956521739135" y="-771.42857142857144"/>
+            <point key="canvasLocation" x="3228.985507246377" y="-792.1875"/>
         </scene>
         <!--Login-->
         <scene sceneID="fkX-Wk-FkD">
