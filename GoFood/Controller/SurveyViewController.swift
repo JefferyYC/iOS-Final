@@ -75,6 +75,13 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
         background.image = UIImage(named: "surveyBG")
         
         //setting upper right text
+        let da = Date()
+        let calendar = Calendar.current
+        let m = calendar.component(.month, from: da)
+        let d = calendar.component(.day, from: da)
+        let w = calendar.component(.weekday, from: da)
+        date.text = getWeekDay(day: w) + " " + String(m) + "/" +  String(d)
+        
         date.textColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1)
         date.font = UIFont(name: "RockSalt", size: 30)
         temperature.textColor = UIColor(red: 1, green: 0.795, blue: 0.488, alpha: 1)
@@ -133,6 +140,27 @@ class SurveyViewController: UIViewController, UITableViewDataSource, UITableView
             Preference.asian = onePressed
         } else if index == 5 {
             Preference.western = onePressed
+        }
+    }
+    
+    func getWeekDay(day: Int) -> String {
+        switch day {
+        case 1:
+            return "Sunday"
+        case 2:
+            return "Monday"
+        case 3:
+            return "Tuesday"
+        case 4:
+            return "Wednesday"
+        case 5:
+            return "Thursday"
+        case 6:
+            return "Friday"
+        case 7:
+            return "Saturday"
+        default:
+            return ""
         }
     }
     
